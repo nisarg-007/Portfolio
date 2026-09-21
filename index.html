@@ -1,887 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisarg M Shah | Data Scientist · ML Engineer · SDE</title>
-    <link rel="canonical" href="https://nisarg-007.github.io/">
-    <meta name="description"
-        content="Portfolio of Nisarg M Shah — ex-SDE Intern at Amazon, Data Scientist and ML Engineer. MS in Engineering Data Science &amp; AI at the University of Houston.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Nisarg M Shah — Data · AI · Cloud · Software">
-    <meta property="og:description" content="Ex-SDE Intern at Amazon. MS Engineering Data Science &amp; AI, University of Houston. Building cloud-native data systems.">
-    <meta property="og:image" content="https://nisarg-007.github.io/assets/profile.jpg">
-    <meta property="og:url" content="https://nisarg-007.github.io/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nisarg M Shah — Data · AI · Cloud · Software">
-    <meta name="twitter:description" content="Ex-SDE Intern at Amazon. MS Engineering Data Science &amp; AI, University of Houston.">
-    <meta name="twitter:image" content="https://nisarg-007.github.io/assets/profile.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nisarg M Shah</title>
+<meta name="description" content="Nisarg M Shah builds data systems for aviation safety triage, aerial imagery analysis and procurement. Previously a software development engineer intern at Amazon.">
+<link rel="canonical" href="https://nisarg-007.github.io/Portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nisarg M Shah">
+<meta property="og:description" content="Data systems for aviation safety triage, aerial imagery analysis and procurement. Previously an SDE intern at Amazon.">
+<meta property="og:url" content="https://nisarg-007.github.io/Portfolio/">
+<meta property="og:image" content="https://nisarg-007.github.io/Portfolio/02-cover-amazon-hello-world.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Particle Canvas -->
-    <canvas id="particles"></canvas>
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- Cursor Glow -->
-    <div class="cursor-glow" id="cursorGlow"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>NS<span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="#top">Nisarg M Shah</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">
-                    <span class="wave">👋</span> Hello, I'm
-                </p>
-                <h1 class="hero-name">
-                    <span class="name-first">Nisarg</span>
-                    <span class="name-last">M Shah</span>
-                </h1>
-                <div class="hero-role">
-                    <span class="role-prefix">I'm a </span>
-                    <span class="typing-text" id="typingText"></span>
-                    <span class="cursor-blink">|</span>
-                </div>
-                <p class="hero-description">
-                    Most recently an <span class="highlight">SDE Intern at Amazon</span>, where I shipped
-                    recommendation widgets built for rollout across 21 countries. I turn raw data into
-                    systems people act on &mdash; cloud-native pipelines, explainable ML, and interfaces
-                    that stay out of the way. Currently pursuing an M.S. in Engineering Data Science &amp; AI
-                    at the <span class="highlight">University of Houston</span>.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i> View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i> Get in Touch
-                    </a>
-                    <a href="https://github.com/nisarg-007" target="_blank" class="btn btn-ghost">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-target="24">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="3">0</span>
-                        <span class="stat-label">Internships</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="28">0</span>
-                        <span class="stat-label">Certifications</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="1">0</span>
-                        <span class="stat-label">Research Paper</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <div class="image-ring"></div>
-                    <div class="image-ring ring-2"></div>
-                    <img src="assets/profile.jpg" alt="Nisarg M Shah" class="profile-photo"
-                        onerror="this.src='assets/profile.jpg'">
-                </div>
-                <div class="floating-badge badge-1">
-                    <i class="fas fa-brain"></i> ML/AI
-                </div>
-                <div class="floating-badge badge-2">
-                    <i class="fas fa-chart-line"></i> Analytics
-                </div>
-                <div class="floating-badge badge-3">
-                    <i class="fas fa-code"></i> SDE
-                </div>
-            </div>
+<main id="main">
+<div id="top"></div>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Houston, Texas</p>
+    <h1 class="hero-head">I build data systems people can act on.</h1>
+    <div class="hero-body">
+      <p class="lede">Most recently a software development engineer intern at <strong>Amazon</strong>, where I built two recommendation widgets for the Creator Storefront, architected for rollout across 21 countries. I am finishing an M.S. in Engineering Data Science and AI at the University of Houston.</p>
+      <div class="actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn-quiet" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="02-cover-amazon-hello-world.jpg" alt="Nisarg standing beside a screen showing a terminal session that reads: Hello world, I am an intern at Amazon." width="576" height="147">
+      <figcaption class="caption">First commit on the Creator Experience team. Seattle, summer 2026.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2 id="work-h">Selected work</h2>
+      <p>Two projects with screenshots of the running software. Everything below them is source code you can read.</p>
+    </div>
+
+    <article class="project rise">
+      <figure class="project-media">
+        <img src="07-job-tracker-onboarding.jpg" alt="Job Application Tracker onboarding screen showing a five step progress bar at twenty percent and four feature panels: one click save, dashboard, reminders, and no duplicates." width="346" height="347" loading="lazy">
+      </figure>
+      <div>
+        <p class="project-kicker">Chrome extension, open source</p>
+        <h3>Job Application Tracker</h3>
+        <p>Saves a job application to your own Google Sheet in one click. No account, no server, no database. The data goes from the page you are on straight to your Drive, so I never see it.</p>
+        <ul class="facts">
+          <li><span class="k">Extraction fallback</span> <span class="v">DOM, JSON-LD, og:tags</span></li>
+          <li><span class="k">Boards supported</span> <span class="v">LinkedIn, Indeed, Greenhouse, Lever</span></li>
+          <li><span class="k">Backend</span> <span class="v">None. Apps Script webhook</span></li>
+        </ul>
+        <p class="tech">JavaScript, Manifest V3, Google Apps Script</p>
+        <p class="link-row"><a href="https://github.com/nisarg-007/job-application-tracker">Read the source</a></p>
+      </div>
+    </article>
+
+    <article class="project flip rise">
+      <figure class="project-media">
+        <img src="08-procurement-system-erd.jpg" alt="Entity relationship diagram for the procurement system showing sixteen linked tables including purchase requests, purchase orders, approvals, vendors, budget transactions and an audit log." width="346" height="177" loading="lazy">
+      </figure>
+      <div>
+        <p class="project-kicker">Database design, full stack</p>
+        <h3>Procurement System</h3>
+        <p>I ran a university stockroom and watched requests get lost in email threads. So I modelled the real workflow as a relational database and built the tool around it. Every change to a record is written to a central audit log.</p>
+        <ul class="facts">
+          <li><span class="k">Tables</span> <span class="v">16, normalised to 3NF</span></li>
+          <li><span class="k">Access levels</span> <span class="v">6, role based</span></li>
+          <li><span class="k">Audit coverage</span> <span class="v">Every mutation</span></li>
+        </ul>
+        <p class="tech">Python, Flask, SQLite, Firebase Auth</p>
+        <p class="link-row"><a href="https://github.com/nisarg-007/procurement_system">Read the source</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="band band-alt" id="experience" aria-labelledby="exp-h">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2 id="exp-h">Experience</h2>
+      <p>Four roles across software, data science and university operations.</p>
+    </div>
+    <ul class="roles rise">
+      <li class="role">
+        <div class="role-when">May 2026 to Aug 2026<br>Seattle, Washington</div>
+        <div>
+          <h3>Software Development Engineer Intern</h3>
+          <p class="org">Amazon, Creator Experience</p>
+          <p>Built two product recommendation widgets for the Creator Storefront from the ground up, architected for rollout across 21 countries. I wrote a custom Composer package and deployment pipeline for them, cut render overhead with a lazy loading mechanism for the recommendations, and moved 55 change requests through Amazon internal tooling by bridging independent packages.</p>
+          <figure class="role-figure">
+            <img src="03-amazon-nas-intern-demo.jpg" alt="Nisarg beside a display reading Welcome NAS Builders, Intern Demo Showcase." width="348" height="461" loading="lazy">
+            <figcaption class="caption">Intern demo showcase, August 2026.</figcaption>
+          </figure>
         </div>
-        <a href="#about" class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </a>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">01.</span> About Me
-            </h2>
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>
-                        I'm a passionate <strong>Data Scientist</strong> and <strong>Software Engineer</strong>
-                        with a knack for turning complex problems into elegant, data-driven solutions. Currently
-                        pursuing my <strong>M.S. in Engineering Data Science</strong> at the University of Houston
-                        (graduating May 2027), I bring a blend of strong analytical skills and hands-on engineering
-                        experience.
-                    </p>
-                    <p>
-                        With internship experience at <strong>Laugh Logic Labs</strong> and <strong>Linde
-                            Engineering</strong>,
-                        I've worked on fine-tuning LLMs, building data pipelines, and creating responsive web
-                        applications. I love exploring the intersection of AI, data analytics, and software
-                        engineering.
-                    </p>
-                    <p>
-                        When I'm not coding or crunching data, you'll find me watching
-                        <span class="interest"><i class="fas fa-cricket-bat-ball"></i> Cricket</span>,
-                        enjoying <span class="interest"><i class="fas fa-music"></i> Music</span>,
-                        <span class="interest"><i class="fas fa-plane-departure"></i> Traveling</span>, or
-                        <span class="interest"><i class="fas fa-utensils"></i> Cooking</span>.
-                    </p>
-                </div>
-                <div class="about-education reveal">
-                    <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Education</h3>
-                    <div class="education-timeline">
-                        <div class="edu-card">
-                            <div class="edu-icon"><i class="fas fa-university"></i></div>
-                            <div class="edu-content">
-                                <h4>M.S., Engineering Data Science</h4>
-                                <p class="edu-school">University of Houston — Main Campus</p>
-                                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Houston, Texas</p>
-                                <span class="edu-date">Graduating May 2027</span>
-                            </div>
-                        </div>
-                        <div class="edu-card">
-                            <div class="edu-icon"><i class="fas fa-university"></i></div>
-                            <div class="edu-content">
-                                <h4>B.Tech., Information Technology</h4>
-                                <p class="edu-school">Charotar University of Science & Technology</p>
-                                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Changa, Gujarat, India</p>
-                                <span class="edu-date">Graduated May 2025 · GPA: 3.4/4.0</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </li>
+      <li class="role">
+        <div class="role-when">Jan 2026 to May 2026<br>Houston, Texas</div>
+        <div>
+          <h3>Instructional Assistant</h3>
+          <p class="org">University of Houston, Department of Chemistry</p>
+          <p>Built Power Automate workflows and Smartsheet dashboards for Finance and HR, maintained the department SharePoint sites, and reconciled cost centres in PeopleSoft. The procurement project below started here, from watching the paper process fail.</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">02.</span> Skills & Technologies
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                        <h3>Data Science & ML</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">LLMs</span>
-                        <span class="skill-tag">Predictive Modeling</span>
-                        <span class="skill-tag">Statistical Modeling</span>
-                        <span class="skill-tag">ETL & Data Pipelines</span>
-                        <span class="skill-tag">Computer Vision</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h3>Languages</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Cloud & DevOps</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS (SageMaker, Lambda)</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Kafka</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Cluster Computing</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <h3>Databases & BI</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Tableau</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-                        <h3>Analytics & Visualization</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">SciPy</span>
-                        <span class="skill-tag">Excel (VBA, Power Query)</span>
-                        <span class="skill-tag">Geospatial Analysis</span>
-                        <span class="skill-tag">DAX</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">AngularJS</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Django</span>
-                    </div>
-                </div>
-            </div>
+      </li>
+      <li class="role">
+        <div class="role-when">Dec 2024 to Apr 2025<br>Remote</div>
+        <div>
+          <h3>Data Science Intern</h3>
+          <p class="org">Laugh Logic Labs</p>
+          <p>Fine tuned domain specific language models with Hugging Face Transformers, raising chatbot engagement 25 percent and cutting latency 30 percent. Built the conversational data pipelines behind them and automated 30 percent of routine inquiries with LangChain.</p>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section experience" id="experience">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">03.</span> Work Experience
-            </h2>
-            <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>Software Development Engineer Intern</h3>
-                                    <p class="company"><i class="fas fa-building"></i> Amazon — Creator Experience, Seattle, WA</p>
-                                </div>
-                                <span class="timeline-date">May 2026 — Aug 2026</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Built two product-recommendation widgets from the ground up for the Creator
-                                    Storefront, architected for rollout across <strong>21 countries</strong>, by
-                                    engineering a custom Composer package and deployment pipeline from scratch</li>
-                                <li>Cut storefront rendering overhead by engineering a bespoke lazy-loading mechanism
-                                    for product recommendations, verified through deployed delayed asset loading</li>
-                                <li>Streamlined the widget development lifecycle across <strong>55 Change Requests</strong>
-                                    by bridging independent packages with Amazon's internal deployment tooling</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>Java</span><span>JavaScript</span><span>Composer</span><span>CI/CD</span><span>Frontend Architecture</span>
-                            </div>
-                        </div>
-                    </div>
-                                    <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Data Science Intern</h3>
-                                <p class="company"><i class="fas fa-building"></i> Laugh Logic Labs, India</p>
-                            </div>
-                            <span class="timeline-date">Dec 2024 — Apr 2025</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Increased chatbot engagement by <strong>25%</strong> and reduced latency by
-                                <strong>30%</strong> by fine-tuning domain-specific LLMs using Hugging Face Transformers
-                            </li>
-                            <li>Reduced manual support workload by <strong>30%</strong> by engineering and cleaning
-                                large-scale conversational datasets with Python and Pandas to power LangChain workflows
-                            </li>
-                            <li>Built interactive Power BI dashboards that improved customer retention insights by
-                                <strong>30%</strong>, enabling targeted marketing strategies
-                            </li>
-                            <li>Established SOPs for weekly KPI reporting, automating data pipelines and transforming
-                                <strong>100K+</strong> raw records to reduce manual processing time by
-                                <strong>40%</strong>
-                            </li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span>Python</span><span>LLMs</span><span>LangChain</span><span>Power
-                                BI</span><span>Pandas</span><span>Hugging Face</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Software Developer Intern</h3>
-                                <p class="company"><i class="fas fa-building"></i> Linde Engineering, India</p>
-                            </div>
-                            <span class="timeline-date">Jun 2023 — Jul 2023</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Increased employee survey participation by <strong>40%</strong> by developing a
-                                responsive interface for <strong>300+</strong> users using HTML, CSS, and Bootstrap</li>
-                            <li>Enhanced platform usability and data privacy by integrating Django and SQLite3 back-end
-                                components to support secure data handling</li>
-                        </ul>
-                        <div class="timeline-tech">
-                            <span>HTML/CSS</span><span>Bootstrap</span><span>Django</span><span>SQLite3</span><span>Figma</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </li>
+      <li class="role">
+        <div class="role-when">May 2023 to Jun 2023<br>Vadodara, India</div>
+        <div>
+          <h3>Web Developer Intern</h3>
+          <p class="org">Linde Engineering India</p>
+          <p>Built a responsive survey platform for more than 300 employees on Django and SQLite, supporting anonymous submission. Response rate rose 40 percent.</p>
         </div>
-    </section>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">04.</span> Featured Projects
-            </h2>
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ml-ai">ML / AI</button>
-                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
-                <button class="filter-btn" data-filter="nlp">NLP</button>
-                <button class="filter-btn" data-filter="web-dev">Web Dev</button>
-            </div>
-            <div class="projects-grid">
+<section class="band" id="code" aria-labelledby="code-h">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2 id="code-h">Other repositories</h2>
+      <p>No screenshots for these, so here is the source instead. All public on GitHub.</p>
+    </div>
+    <ul class="repos rise">
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007/occurrence-desk">occurrence-desk</a></span>
+        <span class="repo-what">Aviation safety report triage. NASA ASRS narratives are parsed from PDF, categorised, joined to real BTS flight records, and served as a ranked, explainable analyst queue.</span>
+        <span class="repo-tech">Python, SQS, Fargate</span>
+      </li>
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007/dip-urban-land-cover-pipeline">dip-urban-land-cover-pipeline</a></span>
+        <span class="repo-what">Classical image processing on 1 metre NAIP aerial imagery of Houston. Gamma of 1.245 derived from shadow quartiles. CLAHE held 0.87 local contrast against 0.66 for global equalisation. Roughly 62,000 Harris corners on buildings and junctions.</span>
+        <span class="repo-tech">Python, OpenCV, SciPy</span>
+      </li>
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007/zepto-sql-analysis">zepto-sql-analysis</a></span>
+        <span class="repo-what">Unit economics across more than 3,000 quick commerce products. True price per gram, revenue lost to stockouts, and delivery weight by category.</span>
+        <span class="repo-tech">PostgreSQL</span>
+      </li>
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007/Advanced-SQL-Project-on-Netflix-data">Advanced-SQL-Project-on-Netflix-data</a></span>
+        <span class="repo-what">Window functions, common table expressions and ranking logic across the Netflix catalogue.</span>
+        <span class="repo-tech">SQL</span>
+      </li>
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007/n8n-job-pipeline">n8n-job-pipeline</a></span>
+        <span class="repo-what">Job sourcing pipeline that scrapes, normalises, enriches and notifies on a schedule.</span>
+        <span class="repo-tech">n8n</span>
+      </li>
+      <li class="repo">
+        <span class="repo-name"><a href="https://github.com/nisarg-007?tab=repositories">All 24 public repositories</a></span>
+        <span class="repo-what">Coursework, internship builds and earlier web projects.</span>
+        <span class="repo-tech">GitHub</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
+<section class="band band-alt" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2 id="about-h">About</h2>
+    </div>
+    <div class="about-grid rise">
+      <figure class="about-portrait">
+        <img src="assets/profile.jpg" alt="Portrait of Nisarg M Shah." width="879" height="879" loading="lazy">
+      </figure>
+      <div class="about-body">
+        <p>I like problems where the data is messy and the answer has to be defensible. Aviation safety narratives, aerial imagery, procurement records and product catalogues all have that shape. The interesting work is rarely the model. It is the pipeline that feeds it and the interface that makes the output usable by someone who did not build it.</p>
+        <p>I am open to software engineering, data and machine learning roles starting in 2027.</p>
+        <ul class="detail-list">
+          <li><span class="k">Studying</span> <span>M.S. Engineering Data Science and AI, University of Houston, 2025 to 2027</span></li>
+          <li><span class="k">Earlier degree</span> <span>B.Tech Information Technology, CHARUSAT, 2021 to 2025</span></li>
+          <li><span class="k">Publication</span> <span>Analysis of Player Performance in Cricket using Power BI. ISBM 2024, Bangkok</span></li>
+          <li><span class="k">Certifications</span> <span>28, including AWS Machine Learning Foundations and Oracle Data Platform 2025</span></li>
+          <li><span class="k">Languages</span> <span>English, Gujarati, Hindi. IELTS 7.5</span></li>
+          <li><span class="k">Based in</span> <span>Houston, Texas</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <!-- Shipped & open source: occurrence-desk -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-plane-departure"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007/occurrence-desk" target="_blank" rel="noopener" title="occurrence-desk on GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">occurrence-desk</h3>
-                    <p class="project-desc">Cloud-native triage for aviation safety reports. NASA ASRS narrative PDFs are
-                        parsed, categorised, linked to real BTS flight records, and served to analysts as a ranked,
-                        explainable queue running on SQS and Fargate.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-cloud"></i> SQS + Fargate</span>
-                        <span class="highlight-chip"><i class="fas fa-eye"></i> Explainable ranking</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span><span>AWS</span><span>NLP</span><span>PDF Parsing</span>
-                    </div>
-                </div>
-
-                <!-- Shipped & open source: dip-urban-land-cover-pipeline -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-satellite"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007/dip-urban-land-cover-pipeline" target="_blank" rel="noopener" title="dip-urban-land-cover-pipeline on GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Urban Land Cover Pipeline</h3>
-                    <p class="project-desc">Classical image-processing pipeline run end to end on live 1m NAIP aerial
-                        imagery of downtown Houston — gamma correction, CLAHE, median filtering, FFT low/high-pass,
-                        Canny edges and Harris corners, with every parameter derived from the data.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-adjust"></i> CLAHE 0.87 vs 0.66 global</span>
-                        <span class="highlight-chip"><i class="fas fa-crosshairs"></i> ~62K corners detected</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span><span>OpenCV</span><span>NumPy</span><span>SciPy</span>
-                    </div>
-                </div>
-
-                <!-- Shipped & open source: job-application-tracker -->
-                <div class="project-card reveal" data-category="web-dev">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007/job-application-tracker" target="_blank" rel="noopener" title="job-application-tracker on GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Job Application Tracker</h3>
-                    <p class="project-desc">Free, open-source Chrome extension that logs job applications straight to
-                        your own Google Sheet. Serverless, no accounts, no data collection — with a cascading
-                        DOM → JSON-LD → og:tag scraper that holds extraction across LinkedIn, Indeed, Greenhouse and Lever.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-lock"></i> 100% private</span>
-                        <span class="highlight-chip"><i class="fas fa-layer-group"></i> Manifest V3</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>JavaScript</span><span>Chrome API</span><span>Apps Script</span>
-                    </div>
-                </div>
-
-                <!-- Shipped & open source: procurement_system -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007/procurement_system" target="_blank" rel="noopener" title="procurement_system on GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Procurement System</h3>
-                    <p class="project-desc">A real departmental procurement workflow rebuilt as a 16-table relational
-                        database normalised to 3NF, with role-specific KPI dashboards, six access levels and a
-                        centralised audit log tracking every database mutation.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-database"></i> 16 tables, 3NF</span>
-                        <span class="highlight-chip"><i class="fas fa-user-shield"></i> 6 access levels</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span><span>Flask</span><span>SQLite</span><span>Firebase Auth</span>
-                    </div>
-                </div>
-
-                <!-- Project 1: AI Powered Playlist Generator -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-headphones-alt"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">AI Powered Playlist Generator</h3>
-                    <p class="project-desc">Context-aware playlist generator using prompt chaining, enabling
-                        natural-language inputs for highly relevant music recommendations. Semantically indexed 10,000+
-                        songs with GPT-3.5, LangChain, and LlamaIndex.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 10K+ songs indexed</span>
-                        <span class="highlight-chip"><i class="fas fa-bolt"></i> Real-time retrieval</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>GPT-3.5</span><span>LangChain</span><span>LlamaIndex</span><span>Python</span>
-                    </div>
-                </div>
-
-                <!-- Project 2: Predictive Logistics Optimization -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-truck"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Predictive Logistics Optimization & Freight Forecasting</h3>
-                    <p class="project-desc">Improved freight demand forecast accuracy by 18% (MAPE) using hybrid LSTM
-                        and ARIMA models. Built automated pipeline to ingest and clean 500,000+ shipment records.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 18% accuracy gain</span>
-                        <span class="highlight-chip"><i class="fas fa-database"></i> 500K+ records</span>
-                        <span class="highlight-chip"><i class="fas fa-tachometer-alt"></i> 40% faster ETL</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>LSTM</span><span>ARIMA</span><span>SciPy</span><span>Pandas</span><span>SQL</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: GraphRAG System -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">GraphRAG System with Local LLMs (Quantized)</h3>
-                    <p class="project-desc">Reduced hallucination rates by 40% using a GraphRAG system combining vector
-                        similarity search with NetworkX graph traversal. Decreased memory usage by 60% via 4-bit
-                        quantization on Llama-3.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-down"></i> 40% less hallucination</span>
-                        <span class="highlight-chip"><i class="fas fa-memory"></i> 60% less VRAM</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Llama-3</span><span>NetworkX</span><span>RAG</span><span>4-bit Quantization</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: TubeMind -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-video"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">TubeMind: Semantic Video Search & Chat Agent</h3>
-                    <p class="project-desc">Improved search precision by 35% (MRR) with hybrid BM25 + dense vector
-                        embeddings on video transcripts. 3x transcription throughput using batched Whisper-tiny on
-                        Google Colab T4 GPUs.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 35% better MRR</span>
-                        <span class="highlight-chip"><i class="fas fa-tachometer-alt"></i> 3x throughput</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Whisper</span><span>BM25</span><span>Embeddings</span><span>GPU Cluster</span>
-                    </div>
-                </div>
-
-                <!-- Project 5: Explainable AI for Pneumonia -->
-                <div class="project-card reveal" data-category="ml-ai">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-lungs"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Explainable AI (XAI) for Pneumonia Detection</h3>
-                    <p class="project-desc">Achieved 94% diagnostic recall on MIMIC-CXR dataset using fine-tuned
-                        MobileNetV2. Implemented Grad-CAM heatmaps for transparent reasoning on chest X-ray predictions.
-                    </p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-bullseye"></i> 94% recall</span>
-                        <span class="highlight-chip"><i class="fas fa-eye"></i> Grad-CAM visualizations</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>MobileNetV2</span><span>Grad-CAM</span><span>Transfer Learning</span><span>Python</span>
-                    </div>
-                </div>
-
-                <!-- Project 6: Air Quality Prediction -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-wind"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Air Quality Prediction</h3>
-                    <p class="project-desc">Processed 50K+ real-world records and trained regression models to predict
-                        Air Quality Index, achieving above 90% accuracy through feature engineering and model tuning.
-                    </p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-bullseye"></i> 90%+ accuracy</span>
-                        <span class="highlight-chip"><i class="fas fa-database"></i> 50K+ records</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Regression</span><span>Feature Engineering</span><span>Python</span><span>Pandas</span>
-                    </div>
-                </div>
-
-                <!-- Project 7: Silicon Yield Analysis -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-microchip"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Silicon Yield Analysis Using Wafer Test Data</h3>
-                    <p class="project-desc">Analyzed wafer-level parametric data using Python and regression models to
-                        identify outliers and improve yield prediction accuracy. Built visualizations for product
-                        characterization.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-chart-pie"></i> Yield optimization</span>
-                        <span class="highlight-chip"><i class="fas fa-search"></i> Outlier detection</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span><span>Regression</span><span>Data Visualization</span><span>Statistics</span>
-                    </div>
-                </div>
-
-                <!-- Project 8: NLP Student Evaluation -->
-                <div class="project-card reveal" data-category="nlp">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-comment-dots"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">NLP-Driven Student Evaluation Insight Platform</h3>
-                    <p class="project-desc">Increased sentiment classification accuracy by 25% (F1-score) using
-                        fine-tuned BERT. Reduced manual review time by 50% via automated NER and topic modeling with
-                        SpaCy.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 25% F1 improvement</span>
-                        <span class="highlight-chip"><i class="fas fa-clock"></i> 50% time saved</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>BERT</span><span>SpaCy</span><span>NLTK</span><span>NER</span><span>LSTM</span>
-                    </div>
-                </div>
-
-                <!-- Project 9: Intelligent Transportation System -->
-                <div class="project-card reveal" data-category="web-dev">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-car"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Intelligent Transportation System</h3>
-                    <p class="project-desc">Developed a 3-tier distributed system with modules for drivers, customers,
-                        billing, admin, and rides. Implemented dynamic pricing using Uber Fares Kaggle dataset with ML
-                        models. Load tested on 10K+ records.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-server"></i> 3-tier architecture</span>
-                        <span class="highlight-chip"><i class="fas fa-users"></i> 10K+ load test</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Docker</span><span>REST
-                            APIs</span>
-                    </div>
-                </div>
-
-                <!-- Project 10: Multi-Regional Demand Forecasting -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-globe-americas"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Multi-Regional Demand Forecasting & Geographic Analysis</h3>
-                    <p class="project-desc">Optimized inventory planning for 5 global regions by processing 250K+
-                        geographic sales records. Improved forecasting accuracy by 18% using Time-Series and Regression
-                        models.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 18% forecast accuracy</span>
-                        <span class="highlight-chip"><i class="fas fa-map"></i> 5 global regions</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Power BI</span><span>Python</span><span>Time-Series</span><span>Geospatial</span>
-                    </div>
-                </div>
-
-                <!-- Project 11: Customer Churn & Marketing Analytics -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-user-slash"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Customer Churn & Marketing Analytics</h3>
-                    <p class="project-desc">Identified key drivers of customer attrition and proposed retention
-                        strategies to reduce churn by 15% using Random Forest models. Built interactive Tableau
-                        dashboards for stakeholder visibility.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-down"></i> 15% churn reduction</span>
-                        <span class="highlight-chip"><i class="fas fa-chart-bar"></i> Tableau dashboards</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span><span>Tableau</span><span>Random Forest</span><span>Analytics</span>
-                    </div>
-                </div>
-
-                <!-- Project 12: Financial Performance & KPI Tracking -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-dollar-sign"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Financial Performance & KPI Tracking</h3>
-                    <p class="project-desc">Designed dynamic Excel dashboards to monitor budgetary allocation and
-                        financial metrics (ROI, margin, expense ratio) using DAX and Power Query. Cut manual reporting
-                        time by 40%.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-clock"></i> 40% time saved</span>
-                        <span class="highlight-chip"><i class="fas fa-chart-line"></i> Real-time KPIs</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Excel</span><span>Power BI</span><span>DAX</span><span>Power Query</span>
-                    </div>
-                </div>
-
-                <!-- Project 13: Operational Yield Optimization -->
-                <div class="project-card reveal" data-category="data-analytics">
-                    <div class="project-card-header">
-                        <div class="project-icon"><i class="fas fa-industry"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/nisarg-007" target="_blank" title="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Operational Yield Optimization & Reporting</h3>
-                    <p class="project-desc">Identified production bottlenecks to improve yield efficiency by 15% using
-                        SQL queries on operational data. Performed root-cause analysis to minimize defect rates in
-                        manufacturing.</p>
-                    <div class="project-highlights">
-                        <span class="highlight-chip"><i class="fas fa-arrow-up"></i> 15% yield efficiency</span>
-                        <span class="highlight-chip"><i class="fas fa-search"></i> Root-cause analysis</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>SQL</span><span>Excel</span><span>Manufacturing Analytics</span>
-                    </div>
-                </div>
-
-            </div>
+<section class="band" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="sec-head rise">
+      <h2 id="contact-h">Get in touch</h2>
+      <p>Tell me what you are building and I will reply.</p>
+    </div>
+    <div class="contact-grid rise">
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required aria-describedby="err-name">
+          <p class="err" id="err-name">Please enter your name.</p>
         </div>
-    </section>
-
-    <!-- Research & Certifications Section -->
-    <section class="section research" id="research">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">05.</span> Research & Certifications
-            </h2>
-            <div class="research-grid">
-                <div class="research-card reveal">
-                    <div class="research-header">
-                        <div class="research-icon"><i class="fas fa-flask"></i></div>
-                        <h3>Research Work</h3>
-                    </div>
-                    <div class="research-item">
-                        <h4>Data Visualization in Power BI</h4>
-                        <p class="research-meta"><i class="fas fa-tools"></i> Python, Power BI &nbsp;|&nbsp; <i
-                                class="fas fa-calendar"></i> Sep 2024</p>
-                        <ul>
-                            <li>Developed an interactive dashboard analyzing <strong>10,000+</strong> cricket player
-                                records using Python and Power BI</li>
-                            <li>Co-authored a research paper accepted at <strong>ISBM 2024 (Bangkok)</strong>,
-                                showcasing advanced data visualization techniques</li>
-                            <li>Secured full research funding from <strong>CHARUSAT University</strong></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="certifications-card reveal">
-                    <div class="research-header">
-                        <div class="research-icon"><i class="fas fa-certificate"></i></div>
-                        <h3>Certifications</h3>
-                    </div>
-                    <div class="cert-list">
-                        <div class="cert-item">
-                            <div class="cert-badge"><i class="fab fa-google"></i></div>
-                            <div>
-                                <h4>Google Business Intelligence</h4>
-                                <p>Coursera</p>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-badge"><i class="fab fa-google"></i></div>
-                            <div>
-                                <h4>Google Data Analytics Specialization</h4>
-                                <p>Coursera</p>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-badge"><i class="fas fa-database"></i></div>
-                            <div>
-                                <h4>Oracle Data Platform 2025 Certified Foundations Associate</h4>
-                                <p>Oracle</p>
-                            </div>
-<div>
-                                <h4>AWS Academy Graduate — Machine Learning Foundations</h4>
-                                <p>Amazon Web Services</p>
-                            </div>
-<div>
-                                <h4>Software Engineering Job Simulation</h4>
-                                <p>Wells Fargo · Forage</p>
-                            </div>
-<div>
-                                <h4>Data Science Virtual Internship</h4>
-                                <p>British Airways · Forage</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="field">
+          <label for="cf-email">Your email</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required aria-describedby="err-email">
+          <p class="err" id="err-email">Please enter a valid email address so I can reply.</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="title-number">06.</span> Get In Touch
-            </h2>
-            <div class="contact-content reveal">
-                <p class="contact-text">
-                    I'm currently looking for opportunities in <strong>Data Science</strong>,
-                    <strong>Machine Learning</strong>, <strong>Business Analytics</strong>, and
-                    <strong>Software Development</strong>. Whether you have a question or just want
-                    to say hi, my inbox is always open!
-                </p>
-                <a href="mailto:Nisarg0708@gmail.com" class="btn btn-primary btn-large">
-                    <i class="fas fa-paper-plane"></i> Say Hello
-                </a>
-                <div class="contact-socials">
-                    <a href="mailto:Nisarg0708@gmail.com" class="social-link" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/nisargshah0708" target="_blank" class="social-link"
-                        title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/nisarg-007" target="_blank" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" required aria-describedby="err-msg"></textarea>
+          <p class="err" id="err-msg">Please write a short message.</p>
         </div>
-    </section>
+        <button class="btn" type="submit">Open in my email app</button>
+        <p class="form-note">This site has no server. The button opens your own email app with the message filled in, addressed to nisarg0708@gmail.com. Nothing is sent or stored from this page.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      <div>
+        <ul class="direct">
+          <li><span class="k">Email</span> <a href="mailto:nisarg0708@gmail.com">nisarg0708@gmail.com</a></li>
+          <li><span class="k">LinkedIn</span> <a href="https://www.linkedin.com/in/nisargshah0708">linkedin.com/in/nisargshah0708</a></li>
+          <li><span class="k">GitHub</span> <a href="https://github.com/nisarg-007">github.com/nisarg-007</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                Designed & Built by <strong>Nisarg M Shah</strong>
-            </p>
-            <p class="footer-sub">© 2025. All rights reserved.</p>
-        </div>
-    </footer>
+</main>
 
-    <script src="script.js"></script>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <span>Nisarg M Shah, Houston, Texas</span>
+    <span class="foot-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://github.com/nisarg-007/Portfolio">Source of this site</a>
+    </span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
-
 </html>
